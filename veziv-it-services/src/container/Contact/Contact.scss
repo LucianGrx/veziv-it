@@ -1,0 +1,79 @@
+.app__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    flex-direction: column;
+    @media screen and (max-width: 450px) {
+        padding: 0 0 4rem 0;
+    }
+
+    .title__contact {
+        margin: 0.6rem 0 1rem 0;
+        @media screen and (max-width: 450px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.app__contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    div {
+        flex: 1;
+        padding: 0 1rem;
+        @media screen and (max-width: 450px) {
+            &:first-child {
+                display: none;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 1rem;
+            @media screen and (min-width: 768px) {
+                width: 90%;
+            }
+            label {
+                margin: 0.8rem 0 1rem 0;
+                
+            }
+            input {
+                padding: 0.5rem;
+                border: 2px solid;
+                border-radius: 6px;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+            }
+            textarea {
+                padding: 0.5rem;
+                border: 2px solid;
+                border-radius: 6px;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+            }
+            button {
+                margin: 1rem 0 0 0;
+                padding: 0.5rem;
+                border: 2px solid;
+                border-radius: 6px;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+
+    }
+}

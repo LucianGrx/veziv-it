@@ -1,0 +1,26 @@
+.app__experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+
+    .app__experience-items {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+}
+
+.experience__title {
+        margin-bottom: 4rem;
+        @media screen and (max-width: 450px) {
+            margin-bottom: 3rem;
+        }
+}

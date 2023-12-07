@@ -1,0 +1,46 @@
+.app__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+
+    .img__home {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 769px) {
+            width: 300px;
+        }
+        @media screen and (min-width: 2000px) {
+            margin-top: 2rem;
+            width: 400px;
+        }
+    }
+
+    .title__home {
+        font-size: 2.75rem;
+        font-weight: 800;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0.6rem 0 1rem 0;
+    }
+
+    .p__home {
+        line-height: 1.5;
+
+        @media screen and (min-width: 769px) {
+            font-size: 1rem;
+            padding: 0 5rem;
+        }
+        @media screen and (min-width: 1201px) {
+            font-size: 1.25rem;
+            padding: 0 7rem;
+            
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.app__experienceitem {
+    border: 2px solid;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .app__item-img {
+        width: 100%;
+        height: 9rem;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    
+    .app__item-card {
+        width: 100%;
+        padding: 1rem;
+    
+        .app__item-title {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            @media screen and (min-width: 768px) {
+                font-size: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+        }
+        p {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: start;
+            @media screen and (min-width: 768px) {
+                font-size: 0.875rem;
+            }
+    
+            span {
+                display: inline-block;
+                padding: 0.5rem;
+                font-weight: 600;
+                border: 2px solid;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
